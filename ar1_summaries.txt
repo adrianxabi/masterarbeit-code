@@ -1,0 +1,46 @@
+=== Australia AR(1) ===
+
+Call:
+lm(formula = growth ~ growth_lag, data = filter(gdp_clean, country == 
+    "AUS"))
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.99101 -0.33332 -0.02684  0.29133  2.25802 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.71017    0.08731   8.134 4.96e-13 ***
+growth_lag   0.04386    0.09239   0.475    0.636    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5867 on 117 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.001922,	Adjusted R-squared:  -0.006608 
+F-statistic: 0.2254 on 1 and 117 DF,  p-value: 0.6359
+
+
+
+=== Korea AR(1) ===
+
+Call:
+lm(formula = growth ~ growth_lag, data = filter(gdp_clean, country == 
+    "KOR"))
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.1852 -0.4829 -0.0558  0.5620  2.6421 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.72899    0.15055   4.842 3.97e-06 ***
+growth_lag   0.42181    0.08383   5.032 1.78e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.169 on 117 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.1779,	Adjusted R-squared:  0.1709 
+F-statistic: 25.32 on 1 and 117 DF,  p-value: 1.776e-06
+
